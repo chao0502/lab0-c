@@ -27,8 +27,7 @@ void q_free(queue_t *q)
     /* TODO: How about freeing the list elements and the strings? */
     /* Free queue structure */
     if (q) {
-        whlie(q->head)
-        {
+        while (q->head) {
             if (q->head->next) {
                 list_ele_t *tem;
                 tem = q->head;
